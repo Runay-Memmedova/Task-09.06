@@ -1,0 +1,19 @@
+1. **Create a table**: Create a table named 'Project_Details' with columns 'Project_ID' (number type), 'Project_Name' (varchar type), 'Start_Date' (date type), 'End_Date' (date type) and 'Manager_ID' (number type).
+create table project_details (project_id number,
+project_name varchar2(100),
+start_date date,
+manager_id number);
+
+2. **Delete operation**: Delete from 'Employees' where 'first_name' is 'John' and 'last_name' is 'Doe'.
+delete from employees where first_name='John' an last_name='Doe';
+
+3. **Select with sorting**: Write a SELECT statement to get all the employees in descending order of hire date.
+select * from employees order by hire_date desc;
+ 
+4. **Number Function**: Write a query using the ROUND function to round off the salaries in the 'Employees' table to the nearest hundred.
+select round(salary,-2) from employees;
+
+5. **Right Join**: Write a query to get all departments and their employees, including departments without employees.
+select e.*,d.* from employees e
+right join departments d
+on e.department_id=d.department_id;
