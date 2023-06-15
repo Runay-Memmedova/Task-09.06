@@ -8,4 +8,9 @@ update project_details set project_status='Completed' where end_date<sysdate;
 select* from employees where salary>(select avg(salary)from employees);
 
 4. **Conversion Function**: Write a query to convert the hire date in the 'Employees' table to a string in the 'DD-MON-YYYY' format.
+Select to_char(hire_date,'DD-MM-YYYY') from employees;
+
 5. **Full Outer Join**: Write a query to get all employees and all departments, regardless of whether the employee is assigned to a department or not.
+select e.* ,d.* from employees e
+full join departments d
+on d.department_id=e.department_id;
