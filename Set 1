@@ -5,8 +5,9 @@ Name varchar2(100),
 DOB date,
 Department_ID number);
 2. **Insert operation**: Insert a row into the 'Employees' table where first_name is 'John', last_name is 'Doe', email is '[jdoe@mail.com](mailto:jdoe@mail.com)', and hire_date is '15-JAN-2022'.
-insert into employees(first_name,last_name,email,hire_date)
-values ('Jhon','Doe','jdoe@mail.com','01-JUN-22') commit;
+insert into employees(first_name,last_name,email,hire_date,employee_id,job_id)
+values ('Jhon','Doe','jdoe@mail.com','01-JUN-22',12,'IT-Prog');
+commit;
 
 3.   **Select with condition**: Write a SELECT statement to get the details of all the employees who were hired after '01-JAN-2020'.
 select* from employees where hire_date='01-JAN-2020'
