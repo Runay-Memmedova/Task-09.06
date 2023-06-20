@@ -10,7 +10,7 @@ values ('Jhon','Doe','jdoe@mail.com','01-JUN-22',12,'IT-Prog');
 commit;
 
 3.   **Select with condition**: Write a SELECT statement to get the details of all the employees who were hired after '01-JAN-2020'.
-select* from employees where hire_date='01-JAN-2020'
+select* from employees where hire_date>'01-JAN-2020'
 
 4.  **Character Function**: Write a query using the INITCAP function to return all job titles from the 'Jobs' table with the first letter capitalized.
 select Initcap(job_title) from jobs;
